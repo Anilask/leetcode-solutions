@@ -17,9 +17,7 @@ func minRecolors(blocks string, k int) int {
 			count++
 		}
 	}
-
 	minCount := count // Store initial window count
-
 	// Sliding window logic
 	for i := k; i < len(blocks); i++ {
 		// Remove the leftmost element from the previous window
@@ -35,7 +33,6 @@ func minRecolors(blocks string, k int) int {
 			minCount = count
 		}
 	}
-
 	return minCount
 }
 
